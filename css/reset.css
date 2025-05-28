@@ -16,3 +16,6 @@
     --cinza-neutro: #E0E0E0;
     --vermelho-alerta: #E57373;
 }
+a { 
+    text-decoration: none;
+}
