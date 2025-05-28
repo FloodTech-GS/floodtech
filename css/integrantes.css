@@ -1,0 +1,136 @@
+@import url(./reset.css);
+
+body {
+    width: 100vw;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 750px;
+    background: url(../assets/cidade-alagada.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    width: 100%;
+    height: 12vh;
+    padding: 0rem 1rem 0rem 0rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img {
+    width: 100px;
+}
+.header i {
+    font-size: 24px;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+nav button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--azul-escuro);
+    color: var(--bege-claro);
+}
+nav ul{
+    list-style: none;
+
+    display: flex;
+    gap: 1rem;
+    color: black;
+}
+nav ul li a {
+    color: black;
+}
+
+/* Header > conteudo */
+.home-header {
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home{
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+.conteudo-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.conteudo-home p {
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 0.9rem;
+}
+.conteudo-home h1 {
+    width: 100%;
+
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    color: white;
+}
+.conteudo-home span {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0rem 0.5rem;
+    color: var(--azul-forte);
+}
+.home-header a {
+    padding: 0.5em 1rem;
+    background-color: var(--azul-forte);
+    background: linear-gradient(90deg, rgba(46, 139, 192, 1) 0%, rgba(8, 53, 75, 1) 100%);;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.home-header a:hover, .home-header a:active{
+    transform: scale(0.9);
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    padding: 2rem 0rem 0rem 0rem;
+    gap: 1rem;
+
+    background-color: var(--azul-escuro);
+    color: white;
+}
+.footer-conteudo {
+    padding: 0rem 5%;
+}
+.footer-conteudo p {
+    font-size: 0.9rem;
+}
+.footer-bottom {
+    margin-top: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 0.9rem;
+}
