@@ -91,7 +91,7 @@ header {
 /* main */
 main {
     width: 100%;
-    padding-bottom: 9rem;
+    padding-bottom: 5.8rem;
     /* margin-top: 80px; */
 
     display: flex;
@@ -257,3 +257,4 @@ main {
 .depoimento-card h4 {
     color: var(--azul-escuro);
 }
+
