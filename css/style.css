@@ -258,3 +258,25 @@ main {
     color: var(--azul-escuro);
 }
 
+/* footer */
+footer {
+    width: 100%;
+    padding: 2rem 0rem 0rem 0rem;
+    gap: 1rem;
+
+    background-color: var(--azul-escuro);
+    color: white;
+}
+.footer-conteudo {
+    padding: 0rem 5%;
+}
+.footer-conteudo p {
+    font-size: 0.9rem;
+}
+.footer-bottom {
+    margin-top: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 0.9rem;
+}
