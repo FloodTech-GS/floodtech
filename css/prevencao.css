@@ -1,5 +1,9 @@
 @import url(./reset.css);
 
+/* body */
+body {
+    background-color: var(--bege-claro);
+}
 /* Header */
 header {
     width: 100vw;
@@ -119,7 +123,7 @@ main {
 }
 
 
-
+/* cards de dicas */
 .cards-grid {
     width: 90%;
 
@@ -132,11 +136,11 @@ main {
 }
 
 .card {
-    background-color: var(--azul-claro);
+    background-color: var(--azul-forte);
     border-radius: 20px;
     padding: 2rem 1.5rem;
-    color: var(--branco);
-    box-shadow: 0 8px 20px var(--sombra);
+    color: white;
+    box-shadow: 0 8px 20px rgba(46, 139, 192, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,9 +162,56 @@ main {
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    color: var(--bege-claro);
 }
 
 .card p {
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* checklist de prevenção */
+.checklist-container {
+    width: 90%;
+    max-width: 700px;
+
+    background-color: white;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 8px 20px rgba(46, 139, 192, 0.3);
+}
+
+.checklist-container h2 {
+    font-size: 2rem;
+    color: var(--azul-escuro);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.checklist {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: black;
+    padding-left: 0;
+}
+
+.checklist li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.checklist input {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: var(--azul-forte);
+}
+
+.checklist label {
+    cursor: pointer;
+    user-select: none;
 }
