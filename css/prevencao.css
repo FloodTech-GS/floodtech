@@ -127,15 +127,16 @@ main {
 .cards-grid {
     width: 90%;
 
-    display: grid;
-    grid-template-columns: repeat(250px);
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
     padding: 4rem 0;
 }
 
 .card {
+    max-width: 450px;
     background-color: var(--azul-forte);
     border-radius: 20px;
     padding: 2rem 1.5rem;
@@ -214,4 +215,64 @@ main {
 .checklist label {
     cursor: pointer;
     user-select: none;
+}
+
+/* timeline */
+.timeline-container {
+    width: 90%;
+
+    max-width: 900px;
+    margin: 0 auto 4rem auto;
+    padding: 4rem 1rem;
+}
+
+.timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 2rem;
+    border-left: 4px solid var(--azul-escuro);
+}
+
+.card-timeline {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.card-timeline:last-child {
+    margin-bottom: 0;
+}
+
+.card-timeline-icon {
+    position: absolute;
+    left: -1.3rem;
+    top: 0;
+    background-color: var(--azul-forte);
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    box-shadow: 0 0 10px rgba(46, 139, 192, 0.3);
+}
+
+.card-timeline-text {
+    background-color: var(--azul-forte);
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 8px 20px rgba(46, 139, 192, 0.3);
+}
+
+.card-timeline-text h3 {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.card-timeline-text p {
+    font-weight: 500;
+    line-height: 1.4;
 }
