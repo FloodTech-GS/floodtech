@@ -124,3 +124,12 @@ idSenhaCad.addEventListener('keyup', () => {
 const buttonLogin = document.getElementById("buttonLogin");
 const buttonCadastro = document.getElementById("buttonCadastro");
 
+// Função de login
+function login(){
+    if(validEmail && validSenha) {
+        window.location.href = "../index.html";
+        alert("Login realizado com sucesso!");
+    } else {
+        alert("Preencha todos os campos corretamente para seguir!");
+    }
+}
