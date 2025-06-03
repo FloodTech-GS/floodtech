@@ -25,11 +25,18 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.header img {
-    width: 100px;
+.header > a {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    
 }
 .header i {
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 nav {
@@ -37,12 +44,10 @@ nav {
     align-items: center;
     gap: 1rem;
 }
-nav button {
-    padding: 0.5rem 1.5rem;
-    border: none;
-    border-radius: 10px;
+.btn-login {
+    padding: 0.5rem 1.3rem;
+    border-radius: 5px;
     background-color: var(--azul-escuro);
-    color: var(--bege-claro);
 }
 nav ul{
     list-style: none;
@@ -250,6 +255,9 @@ footer {
 @media (min-width: 992px) {
     .conteudo-home h1 {
         font-size: 3rem;
+    }
+    nav {
+        display: flex;
     }
 }
 @media (min-width: 1300px) {
