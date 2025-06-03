@@ -25,3 +25,58 @@
             <i class="fa-solid fa-bars"></i>
         </section>
     </header>
+    <main>
+        <section class="container">
+            <section class="container-img">
+                <img src="../assets/img-login.jpg" alt="Cidade sendo alagada">
+            </section>
+            <section class="formulario" id="idFormLogin">
+                <section class="titulo-formulario">
+                    <h2>Faça seu Login</h2>
+                    <p>É novo por aqui? <span id="idIrPCadastro">Crie sua conta</span></p>
+                </section>
+                <form>
+                    <figure class="group-iput">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="idNome">
+                        <span id="erroNome">Nome deve conter pelo menos 3 caracteres.</span>
+                    </figure>
+                    <figure class="group-iput">
+                        <label for="numtel">Número de Telefone</label>
+                        <input type="tel" name="numtel" id="idNumTel">
+                        <span id="erroTelefone">O telefone deve conter o DDD e apenas números.</span>
+                    </figure>
+                    <figure class="group-iput">
+                        <label for="nome">Email</label>
+                        <input type="email" name="email" id="idEmail">
+                        <span id="erroEmail">O email deve conter '@' e '.', sem conter espaço.</span>
+                    </figure>
+                    <figure class="group-iput">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="idSenha">
+                        <span id="erroSenha">A senha deve conter pelo menos 6 caracteres.</span>
+                    </figure>
+                    <button>Entrar</button>
+                </form>
+            </section>
+            <section class="formulario" id="idFormCad">
+                <section class="titulo-formulario">
+                    <h2>Faça seu Cadastro</h2>
+                    <p>Já possui uma conta? <span id="idIrPLogin">Entrar</span></p>
+                </section>
+                <form>
+                    <figure class="group-iput">
+                        <label for="nome">Email</label>
+                        <input type="email" name="email" id="idEmailCad">
+                        <span id="erroEmailCad">O email deve conter '@' e '.', sem conter espaço.</span>
+                    </figure>
+                    <figure class="group-iput">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="idSenhaCad">
+                        <span id="erroSenhaCad">A senha deve conter pelo menos 6 caracteres.</span>
+                    </figure>
+                    <button>Cadastrar</button>
+                </form>
+            </section>
+        </section>
+    </main>
