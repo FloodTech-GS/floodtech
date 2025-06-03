@@ -59,3 +59,93 @@ nav ul{
 nav ul li a {
     color: black;
 }
+
+/* main */
+main {
+    width: 100vw;
+    height: calc(100vh - 10vh - 136px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    padding: 1rem;
+
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+.container-img {
+    display: none;
+}
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.titulo-formulario {
+    text-align: center;
+}
+.titulo-formulario h2 {
+    font-size: 2rem;
+}
+.titulo-formulario p > span {
+    color: var(--azul-forte);
+    font-weight: 600;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.group-iput { 
+    display: flex;
+    flex-direction: column;
+}
+.group-iput label {
+    font-size: 1.2rem;
+}
+.group-iput input {
+    width: 300px;
+    height: 60px;
+    padding: 0 1rem;
+
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    border: none;
+    outline: var(--azul-forte);
+}
+.group-iput input:hover, .group-iput input:focus {
+  border: 2px solid var(--cor-principal);
+  box-shadow: 0px 0px 0px 7px hsl(180, 100%, 33%, 20%);
+  background-color: white;
+}
+form button {
+    width: 300px;
+    height: 50px;
+    margin-top: 1rem;
+
+    background-color: var(--azul-escuro);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+form button:hover, form button:active{
+    background-color: var(--azul-forte);
+}
+form figure span {
+    display: none;
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+/* fomr cad */
+#idFormCad {
+    display: none;
+}
