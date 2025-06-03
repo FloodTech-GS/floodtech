@@ -44,3 +44,18 @@ idNome.addEventListener('keyup', () => {
         validNome = true;
     }
 });
+
+// Validação de Telefone
+idNumTel.addEventListener('keyup', () => {
+    if (idNumTel.value.length != 11 || /[A-Za-z]/.test(idNumTel.value)){
+        idNumTel.style.outline = "1px solid red";
+        idNumTel.style.border = "1px solid red";
+        document.getElementById("erroTelefone").style.display = "block";
+        validTelefone = false;
+    } else {
+        idNumTel.style.outline = "#0E79C1";
+        idNumTel.style.border = "2px solid #0E79C1";
+        document.getElementById("erroTelefone").style.display = "none";
+        validTelefone = true;
+    }
+});
