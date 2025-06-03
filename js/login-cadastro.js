@@ -90,3 +90,17 @@ idEmailCad.addEventListener('keyup', () => {
     }
 });
 
+// Validação de Senha (Login)
+idSenha.addEventListener('keyup', () => {
+    if (idSenha.value.length < 6){
+        idSenha.style.outline = "1px solid red";
+        idSenha.style.border = "1px solid red";
+        document.getElementById("erroSenha").style.display = "block";
+        validSenha = false;
+    } else {
+        idSenha.style.outline = "#0E79C1";
+        idSenha.style.border = "2px solid #0E79C1";
+        document.getElementById("erroSenha").style.display = "none";
+        validSenha = true;
+    }
+});
