@@ -59,3 +59,18 @@ idNumTel.addEventListener('keyup', () => {
         validTelefone = true;
     }
 });
+
+// Validação de Email (Login)
+idEmail.addEventListener('keyup', () => {
+    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(idEmail.value)){
+        idEmail.style.outline = "#0E79C1";
+        idEmail.style.border = "2px solid #0E79C1";
+        document.getElementById("erroEmail").style.display = "none";
+        validEmail = true;
+    } else {
+        idEmail.style.outline = "1px solid red";
+        idEmail.style.border = "1px solid red";
+        document.getElementById("erroEmail").style.display = "block";
+        validEmail = false;
+    }
+});
