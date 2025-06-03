@@ -29,3 +29,18 @@ let validEmail = false;
 let validSenha = false;
 let validEmailCad = false;
 let validSenhaCad = false;
+
+// Validação de Nome
+idNome.addEventListener('keyup', () => {
+    if (idNome.value.length < 3){
+        idNome.style.outline = "1px solid red";
+        idNome.style.border = "1px solid red";
+        document.getElementById("erroNome").style.display = "block";
+        validNome = false;
+    } else {
+        idNome.style.outline = "#0E79C1";
+        idNome.style.border = "2px solid #0E79C1";
+        document.getElementById("erroNome").style.display = "none";
+        validNome = true;
+    }
+});
