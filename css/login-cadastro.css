@@ -210,3 +210,20 @@ footer {
     }
 }   
  
+@media (min-width: 1300px) {
+    .container {
+        width: 80%;
+    }
+    .conteudo-home h1 {
+        font-size: 3rem;
+    }
+    .conteudo-home p {
+        font-size: 1.2rem;
+    }
+    .container-img {
+        width: 50%;
+    }
+    .formulario {
+        width: 60%;
+    }
+}
