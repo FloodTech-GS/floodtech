@@ -74,3 +74,19 @@ idEmail.addEventListener('keyup', () => {
         validEmail = false;
     }
 });
+
+// Validação de Email (Cadastro)
+idEmailCad.addEventListener('keyup', () => {
+    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(idEmailCad.value)){
+        idEmailCad.style.outline = "#0E79C1";
+        idEmailCad.style.border = "2px solid #0E79C1";
+        document.getElementById("erroEmailCad").style.display = "none";
+        validEmailCad = true;
+    } else {
+        idEmailCad.style.outline = "1px solid red";
+        idEmailCad.style.border = "1px solid red";
+        document.getElementById("erroEmailCad").style.display = "block";
+        validEmailCad = false;
+    }
+});
+
