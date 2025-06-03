@@ -138,3 +138,27 @@ main {
 .card {
     width: 100%;
 }
+
+.titulo-card {
+    width: 100%;
+    margin-bottom:1rem ;
+    gap: 0.8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-forte);
+    color: white;
+    border-radius: 50%; 
+}
+.titulo-card h2 {
+    font-size: 2rem;
+}
