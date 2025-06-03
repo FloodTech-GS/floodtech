@@ -119,3 +119,8 @@ idSenhaCad.addEventListener('keyup', () => {
         validSenhaCad = true;
     }
 });
+
+// Botões
+const buttonLogin = document.getElementById("buttonLogin");
+const buttonCadastro = document.getElementById("buttonCadastro");
+
