@@ -133,3 +133,24 @@ function login(){
         alert("Preencha todos os campos corretamente para seguir!");
     }
 }
+
+// Função de cadastro
+function cadastro(){
+    let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]");
+
+    listaUser.push({
+        nomeCad: idNome.value,
+        emailCad: idEmailCad.value,
+        telefoneCad: idNumTel.value,
+        senhaCad: idSenhaCad.value
+    });
+
+    localStorage.setItem("listaUser", JSON.stringify(listaUser));
+
+    if(validNome && validEmailCad && validTelefone && validSenhaCad) {
+        window.location.href = "../index.html";
+        alert("Cadastro realizado com sucesso!");
+    } else {
+        alert("Preencha todos os campos corretamente para seguir!");
+    }
+}
