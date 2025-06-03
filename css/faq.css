@@ -20,3 +20,38 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+.header > a {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    /* background-color: wheat; */
+    color: white;
+    font-weight: 600;
+    gap: 1rem; 
+}
+.header i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+nav button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--azul-escuro);
+    color: var(--bege-claro);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    color: black;
+}
+nav ul li a {
+    color: black;
+}
