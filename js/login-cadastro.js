@@ -104,3 +104,18 @@ idSenha.addEventListener('keyup', () => {
         validSenha = true;
     }
 });
+
+// Validação de Senha (Cadastro)
+idSenhaCad.addEventListener('keyup', () => {
+    if (idSenhaCad.value.length < 6){
+        idSenhaCad.style.outline = "1px solid red";
+        idSenhaCad.style.border = "1px solid red";
+        document.getElementById("erroSenhaCad").style.display = "block";
+        validSenhaCad = false;
+    } else {
+        idSenhaCad.style.outline = "#0E79C1";
+        idSenhaCad.style.border = "2px solid #0E79C1";
+        document.getElementById("erroSenhaCad").style.display = "none";
+        validSenhaCad = true;
+    }
+});
