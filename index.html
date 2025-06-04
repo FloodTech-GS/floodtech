@@ -6,20 +6,22 @@
     <link rel="shortcut icon" href="./assets/logo-floodtech.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/menu.js" defer></script>
     <title>FloodTech</title>
 </head>
 <body>
     <header>
-        <section class="header">
+        <section class="header" id="header">
             <a href="./index.html"><i class="fa-solid fa-house-flood-water"></i> FloodTech</a>
-            <nav>
-                <ul>
+            <nav id="nav">
+                <button id="btn-mobile"><span id="hamburguer"></span></button>
+                <ul id="menu">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/prevencao.html"></a>Prevenção</li>
-                    <li><a href="./pages/integrantes.html"></a>Integrantes</li>
-                    <li><a href="#"></a>FAQ</li>
-                    <li><a href="./pages/contatos.html"></a>Contato</li>
-                    <li><a href="#" class="btn-login">LOGIN</a></li>
+                    <li><a href="./pages/prevencao.html">Prevenção</a></li>
+                    <li><a href="./pages/integrantes.html">Integrantes</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="./pages/contatos.html">Contato</a></li>
+                    <li><a href="./pages/login-cadastro.html" class="btn-login">LOGIN</a></li>
                 </ul>
             </nav>
         </section>
@@ -29,7 +31,7 @@
                     <p>Enchente não é sorte, é prevenção.</p>
                     <h1>Práticas responsáveis de prevenção <br><span>Contra enchentes</span></h1>
                 </figure>
-                <a href="" class="btn-home">Saiba como se proteger</a>
+                <a href="./pages/prevencao.html" class="btn-home">Saiba como se proteger</a>
             </section>
         </section>
     </header>
@@ -41,7 +43,7 @@
                     <section class="sobre-texto">
                         <h2>MAIS SOBRE NOSSO TRABALHO</h2>
                         <p>A FloodTech atua na conscientização, prevenção e mitigação dos impactos de enchentes em áreas urbanas. Servimos como uma plataforma de informação essencial, fornecendo dados atualizados sobre áreas de risco, medidas preventivas e alertas personalizados.</p>
-                        <a href="#" class="prevencao">SAIBA MAIS</a>
+                        <a href="./pages/prevencao.html" class="prevencao">SAIBA MAIS</a>
                     </section>
                 </section>
             </section>
