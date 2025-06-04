@@ -342,6 +342,7 @@ footer {
     }
     #btn-mobile {
         display: block;
+        background-color: black;
     }
     #menu {
         display: block;
