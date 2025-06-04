@@ -15,7 +15,7 @@ header {
 .header {
     width: 100%;
     height: 12vh;
-    padding: 0rem 1rem 0rem 0rem;
+    padding: 0rem 1rem 0rem 1rem;
 
     display: flex;
     justify-content: space-between;
@@ -35,25 +35,31 @@ header {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 nav {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+nav ul{
+    list-style: none;
+
+    display: flex;
+    gap: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+nav ul li a {
+    color: white;
+    font-weight: 600;
 }
 .btn-login {
     padding: 0.5rem 1.3rem;
     border-radius: 5px;
     background-color: var(--azul-escuro);
 }
-nav ul{
-    list-style: none;
-
-    display: flex;
-    gap: 1rem;
-    color: black;
-}
-nav ul li a {
-    color: black;
+#btn-mobile {
+    display: none;
 }
 
 /* Header > conteudo */
@@ -235,6 +241,84 @@ footer {
     width: 100%;
 }
 
+@media (max-width: 990px) {
+    .active-header {
+        transition: .6s;
+        background-color: var(--azul-escuro);
+        border-bottom: 1px solid var(--azul-profundo);
+    }
+    #btn-mobile {
+        display: block;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        top: 12vh;
+        right: 0px;
+        background-color: var(--azul-escuro);
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: .6s;
+        z-index: 1000;
+    }
+    #nav.active #menu {
+        visibility: visible;
+        height: calc(100vh - 12vh);
+        overflow-y: auto;
+    }
+    #menu li {
+        width: 100px;
+        margin: 1.5rem 1rem;
+        border-bottom: 1px solid var(--azul-claro);
+    }
+    #menu li:last-child { 
+        width: 95%;
+        border-bottom: none;
+        display: flex;
+    }
+    .btn-login {
+        width: 100%;
+        text-align: center;
+        background-color: var(--azul-forte);
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburguer {
+        border-top: 2px solid ;
+        width: 20px;
+        transition: .3s;
+    }
+    #hamburguer::after, #hamburguer::before {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        display: block;
+        margin-top: 5px;
+        position: relative;
+        transition: .3s;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+}
 @media (min-width: 992px) {
     nav {
         display: flex;
