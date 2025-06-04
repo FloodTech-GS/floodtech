@@ -6,23 +6,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/login-cadastro.css">
     <script src="../js/login-cadastro.js" defer></script>
+    <script src="../js/menu.js" defer></script>
     <title>Login | FloodTech</title>
 </head>
 <body>
     <header>
-        <section class="header">
+        <section class="header" id="header">
             <a href="./login-cadastro.html"><i class="fa-solid fa-house-flood-water"></i> FloodTech</a>
-            <nav>
-                <!-- <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#"></a>Boas Práticas</li>
-                    <li><a href="#"></a>O que fazer?</li>
-                    <li><a href="#"></a>Fundadores</li>
-                    <li><a href="#"></a>Contato</li>
+            <nav id="nav">
+                <button id="btn-mobile"><span id="hamburguer"></span></button>
+                <ul id="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./prevencao.html">Prevenção</a></li>
+                    <li><a href="./integrantes.html">Integrantes</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="./contatos.html">Contato</a></li>
+                    <li><a href="./login-cadastro.html" class="btn-login">LOGIN</a></li>
                 </ul>
-                <button id="btn-irPLogin">Login</button> -->
             </nav>
-            <i class="fa-solid fa-bars"></i>
         </section>
     </header>
     <main>
@@ -30,10 +31,10 @@
             <section class="container-img">
                 <img src="../assets/img-login.jpg" alt="Cidade sendo alagada">
             </section>
-            <section class="formulario" id="idFormLogin">
+            <section class="formulario" id="idFormCad">
                 <section class="titulo-formulario">
-                    <h2>Faça seu Login</h2>
-                    <p>É novo por aqui? <span id="idIrPCadastro">Crie sua conta</span></p>
+                    <h2>Faça seu Cadastro</h2>
+                    <p>Já possui uma conta? <span id="idIrPLogin">Entrar</span></p>
                 </section>
                 <form>
                     <figure class="group-iput">
@@ -56,26 +57,26 @@
                         <input type="password" name="senha" id="idSenha">
                         <span id="erroSenha">A senha deve conter pelo menos 6 caracteres.</span>
                     </figure>
-                    <button>Entrar</button>
+                    <button id="btn-cad" onclick="cadastrar()">Cadastrar</button>
                 </form>
             </section>
-            <section class="formulario" id="idFormCad">
+            <section class="formulario" id="idFormLogin">
                 <section class="titulo-formulario">
-                    <h2>Faça seu Cadastro</h2>
-                    <p>Já possui uma conta? <span id="idIrPLogin">Entrar</span></p>
+                    <h2>Faça seu Login</h2>
+                    <p>É novo por aqui? <span id="idIrPCadastro">Crie sua conta</span></p>
                 </section>
                 <form>
                     <figure class="group-iput">
                         <label for="nome">Email</label>
-                        <input type="email" name="email" id="idEmailCad">
-                        <span id="erroEmailCad">O email deve conter '@' e '.', sem conter espaço.</span>
+                        <input type="email" name="email" id="idEmailLogin">
+                        <span id="erroEmailLogin">O email deve conter '@' e '.', sem conter espaço.</span>
                     </figure>
                     <figure class="group-iput">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="idSenhaCad">
-                        <span id="erroSenhaCad">A senha deve conter pelo menos 6 caracteres.</span>
+                        <input type="password" name="senha" id="idSenhaLogin">
+                        <span id="erroSenhaLogin">A senha deve conter pelo menos 6 caracteres.</span>
                     </figure>
-                    <button>Cadastrar</button>
+                    <button id="btn-Login" onclick="login()">Entrar</button>
                 </form>
             </section>
         </section>
