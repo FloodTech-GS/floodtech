@@ -11,11 +11,13 @@ header {
     background: url(../assets/cidade-alagada.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 .header {
-    width: 100%;
+    width: 90%;
     height: 12vh;
-    padding: 0rem 1rem 0rem 1rem;
 
     display: flex;
     justify-content: space-between;
@@ -69,14 +71,13 @@ nav ul li a {
     padding: 0.5rem 1.3rem;
     border-radius: 5px;
     background-color: var(--azul-escuro);
+    transition: all .3s;
 }
 .btn-login::after {
     display: none;
 }
-.btn-login:hover::after {
-    visibility: visible;
-    transition: .5s;
-    width: 100%;
+.btn-login:hover, .btn-login:active{
+    background-color: var(--azul-forte);
 }
 #btn-mobile {
     display: none;
