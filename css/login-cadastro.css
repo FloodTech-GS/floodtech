@@ -119,6 +119,7 @@ main {
 .titulo-formulario p > span {
     color: var(--azul-forte);
     font-weight: 600;
+    cursor: pointer;
 }
 form {
     display: flex;
