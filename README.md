@@ -1,9 +1,9 @@
-🌊 TECHFLOOD
-TECHFLOOD é uma solução desenvolvida com o objetivo de conscientizar e informar a população sobre as enchentes, oferecendo tutoriais, orientações e informações claras sobre como prevenir, identificar riscos e agir em situações de emergência.
+🌊 FLOODTECH   
+FloodTech é uma solução desenvolvida com o objetivo de conscientizar e informar a população sobre as enchentes, oferecendo tutoriais, orientações e informações claras sobre como prevenir, identificar riscos e agir em situações de emergência.
 
 Além disso, o sistema possui um design intuitivo, focado em proporcionar uma navegação simples, uma experiência agradável e um entendimento facilitado para todos os usuários.
 
-O TECHFLOOD visa tornar o processo de prevenção mais acessível e eficiente, promovendo autonomia aos cidadãos por meio de orientações bem estruturadas e de fácil compreensão.
+O FLOODTECH visa tornar o processo de prevenção mais acessível e eficiente, promovendo autonomia aos cidadãos por meio de orientações bem estruturadas e de fácil compreensão.
 
 
 🔗 Link do repositório:
