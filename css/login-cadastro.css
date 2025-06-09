@@ -161,6 +161,7 @@ form button {
     color: white;
     font-weight: 600;
     transition: all 0.3s;
+    cursor: pointer;
 }
 form button:hover, form button:active{
     background-color: var(--azul-forte);

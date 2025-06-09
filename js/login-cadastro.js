@@ -133,6 +133,7 @@ function login(){
         alert("Preencha todos os campos corretamente para seguir!");
     }
 }
+buttonLogin.addEventListener('click', login);
 
 // Função de cadastro
 function cadastrar(){
@@ -154,3 +155,4 @@ function cadastrar(){
         alert("Preencha todos os campos corretamente para seguir!");
     }
 }
+buttonCadastro.addEventListener('click', cadastrar);
